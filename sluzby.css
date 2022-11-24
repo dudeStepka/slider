@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "AbhayaLibre-Regular";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Bold";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Light";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Light.ttf);
+}
+
+.Hamburger {
+    width: 30px;
+    height: 24px;
+    /* background-color: rgba(0, 98, 130, 0.048); */
+    position: relative;
+    margin-right: 120px;
+    /* border: black 1px solid; */
+    z-index: 5;
+}
+
+.Line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(25, 72, 106);
+    /* box-shadow: 0 0 0.5px 1px rgb(25, 72, 106); */
+    border-radius: 5%/25%;
+}
+
+.Line1 {
+    top: 0px;
+}
+
+.Line2 {
+    top: 10px;
+}
+
+.Line3 {
+    bottom: 0px;
+}
+
+header {
+    display: flex;
+    /* на одной строке */
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "AbhayaLibre-Light";
+    letter-spacing: 1px; */
+    /* background-color: rgba(25, 72, 106, 0.096); */
+    /* Параметры линии */
+    /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
+    height: 10vh;
+}
+
+header a {
+    /* снятие подчёркивания */
+    color: rgb(25, 72, 106);
+    margin-left: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    /*header - selector элемента, a - selector, hover - наведение мыши. :hover - selector псевдокласса */
+    color: rgb(0, 98, 130);
+}
+
+header nav {
+    /* margin-right: 5%; */
+    /* min-width: 60%;
+     */
+    /* ширина меняется здесь*/
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: calc(-100% - 80px);
+    /* padding-left: 0; */
+    line-height: 180%;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 98, 130, 0.048);
+    box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+    border-radius: 10%;
+    width: fit-content;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+header nav ul li:hover a {
+    /* width: 100%; */
+    width: 100%;
+    display: inline-block;
+    transform: scale(1.2) translateX(20px);
+}
+
+.MenuClass {
+    position: relative;
+    /* border: orangered 2px solid; */
+}
+
+body {
+    font-family: "AbhayaLibre-Regular";
+    margin: auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 98, 130, 0.048);
+}
+
+.sluzby {
+    font-family: "AbhayaLibre-Regular";
+    letter-spacing: 2px;
+    /* padding-left: 80px; */
+    text-align: center;
+    margin: auto;
+}
+
+.vyber {
+    font-family: "AbhayaLibre-Regular";
+    letter-spacing: 2px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+    text-align: center;
+    appearance: none;
+    width: 200px;
+}
+
+.footer {
+    position: sticky;
+    top: 820px;
+    /* left: 0; */
+    /* width: 100%; */
+    letter-spacing: 2px;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+    padding: 15px;
+    background-color: rgba(25, 72, 106, 0.362);
+    box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.362);
+    color: rgb(25, 72, 106);
+    font-size: 16px;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: 10em; */
+    align-items: center
+}
+
+.sluzbyPravo {
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: rgb(14, 41, 59);
+    text-align: center;
+    font-size: 30px;
+}
+
+.nazevSluzby {
+    padding-right: 135px;
+    color: rgb(14, 41, 59);
+    text-align: left;
+}
+
+.Category {
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: rgb(14, 41, 59);
+    text-align: left;
+    font-size: 20px;
+    font-family: "AbhayaLibre-Bold";
+}
+
+.SelectTable {
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Select {
+    /* margin-right: 100px; */
+}
+
+table {
+    width: fit-content;
+    margin: auto;
+}
+
+#AutorskePravo {
+    display: none;
+}
+
+#CizineckePravo {
+    display: none;
+}
+
+@media (max-width: 425px) {
+
+    footer {
+        position:sticky;
+    }
+    header {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sekce {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+
+    .one {
+        /* padding-left: 15px; */
+        width: fit-content;
+        margin: auto;
+    }
+
+    body {
+        width: 100vw;
+        margin: 0;
+        overflow: hidden;
+    }
+
+
+    .four {
+        /* margin-left: 33vw; */
+        /* margin-right: 33vw; */
+        text-align: left;
+        width: fit-content;
+        margin: auto;
+        font-size: 19px;
+        letter-spacing: 0.2em;
+        line-height: 150%;
+        /* margin-bottom: 50px; */
+        /* outline: 1px solid black; */
+        /* padding: 0px 30px; */
+    }
+}

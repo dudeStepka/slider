@@ -1,0 +1,642 @@
+@font-face {
+    font-family: "AbhayaLibre-Regular";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Bold";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Light";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Light.ttf);
+}
+
+.Hamburger {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    margin-right: 120px;
+    z-index: 5;
+}
+
+.Line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(25, 72, 106);
+    border-radius: 5%/25%;
+}
+
+.Line1 {
+    top: 0px;
+}
+
+.Line2 {
+    top: 10px;
+}
+
+.Line3 {
+    bottom: 0px;
+}
+
+header {
+    display: flex;
+    /* на одной строке */
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "AbhayaLibre-Light";
+    letter-spacing: 1px; */
+    /* background-color: rgba(25, 72, 106, 0.096); */
+    /* Параметры линии */
+    /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
+    height: 10vh;
+}
+
+header a {
+    /* снятие подчёркивания */
+    color: rgb(25, 72, 106);
+    margin-left: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    /*header - selector элемента, a - selector, hover - наведение мыши. :hover - selector псевдокласса */
+    color: rgb(27, 85, 104);
+}
+
+header nav {
+    /* margin-right: 5%; */
+    /* min-width: 60%;
+     */
+    /* ширина меняется здесь*/
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: calc(-100% - 80px);
+    /* padding-left: 0; */
+    line-height: 180%;
+    letter-spacing: 0.2em;
+    background-color: #b8cfdd;
+    box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+    border-radius: 10%;
+    width: fit-content;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+header nav ul li:hover a {
+    /* width: 100%; */
+    width: 100%;
+    display: inline-block;
+    transform: scale(1.2) translateX(20px);
+}
+
+.MenuClass {
+    position: relative;
+    /* border: orangered 2px solid; */
+    z-index: 4;
+}
+
+body {
+    font-family: "AbhayaLibre-Regular";
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 98, 130, 0.048);
+}
+
+form input {
+    font-family: "Montserrat-Light";
+    line-height: 200%;
+    font-size: 16px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 12px;
+}
+
+.TableDate input {
+    width: 160px;
+    box-sizing: border-box;
+    background-color: rgb(240, 245, 247);
+    /* border: 2px  rgb(0, 28, 37); */
+    text-align: center;
+    color: rgb(0, 24, 32);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 45px;
+    line-height: 140%;
+    border: 2px ridge rgb(0, 49, 65);
+    font-family: "Montserrat-Medium";
+    cursor: pointer;
+    /* width: fit-content; */
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    /* width: 300px; */
+    height: 80px;
+}
+
+[type="button"] {
+    padding: 5px;
+}
+
+input:focus {
+    outline-color: rgb(0, 98, 130);
+}
+
+form {
+    text-align: left;
+    margin: auto;
+    line-height: 160%;
+}
+
+.Container {
+    height: 100vh;
+    /* View Height - видимая часть окна браузера */
+    display: flex;
+    flex-direction: column;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.Kontakty {
+    /* font-family: "Montserrat-Light"; */
+    font-size: 18px;
+    text-align: left;
+    margin: auto;
+    /* outline: 1px solid black; */
+    padding: 20px;
+    /* border: 20px groove cadetblue; */
+    line-height: 200%;
+}
+
+.Action {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    /* padding: 50px; */
+    line-height: 160%;
+}
+
+.FrameOff input {
+    border: none;
+    color: rgb(1, 84, 112);
+}
+
+.FrameOff input:focus {
+    outline: none;
+}
+
+form {
+    display: block;
+}
+
+.TableDate td {
+    padding: 5px 10px;
+}
+
+.VisaTable input {
+    width: 70px;
+}
+
+.slider {
+    background-color: #486581;
+    padding: 20px 0px 0px 0px;
+}
+
+.footer {
+    letter-spacing: 2px;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+    padding: 15px;
+    background-color: rgba(25, 72, 106, 0.362);
+    box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.362);
+    color: rgb(25, 72, 106);
+    font-size: 16px;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: 10em; */
+    align-items: center
+}
+
+.button {
+    background-color: rgb(233, 246, 250);
+    text-align: center;
+    color: rgb(0, 24, 32);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 18px;
+    line-height: 140%;
+    border: 2px solid rgb(0, 49, 65);
+    font-family: "Montserrat-Medium";
+    cursor: pointer;
+    /* width: fit-content; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    height: 80px;
+}
+
+.button>p {
+    /*Комбинированный элемент, > выбирает первых потомков*/
+    margin: auto;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(text\ style/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+.button:hover {
+    box-shadow: 2px 2px 8px 1px rgb(48, 84, 95), -2px -2px 8px 1px rgb(48, 84, 95);
+    font-family: "Montserrat-Bold";
+}
+
+.nebo {
+    font-size: 9px;
+}
+
+.floating-button {
+    text-decoration: none;
+    padding: 9px 9px 0px 9px;
+    display: inline-block;
+    width: 180px;
+    height: 84px;
+    line-height: 150%;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #1594634d;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.floating-button:hover {
+    background: #1596657e;
+    box-shadow: 0 15px 20px rgba(30, 109, 146, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.reset-button {
+    text-decoration: none;
+    text-decoration: none;
+    padding: 14px 9px 0px 9px;
+    display: inline-block;
+    width: 180px;
+    height: 80px;
+    line-height: 150%;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #b61a485d;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.reset-button:hover {
+    background: #96153c77;
+    box-shadow: 0 15px 20px rgba(30, 109, 146, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.Ivan {
+    opacity: 80%;
+    margin-left: -1px;
+    align-self: flex-end;
+    /* fix to bottom of parent */
+}
+
+.cak:link {
+    color: rgb(25, 72, 106);
+}
+
+.cak:visited {
+    color: rgb(25, 72, 106);
+}
+
+.cak:focus {
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+}
+
+.cak:hover {
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+}
+
+.slogan {
+    font-family: "AbhayaLibre-Regular";
+    font-size: 40px;
+    text-align: center;
+    margin: auto auto;
+    letter-spacing: 0.3m;
+    color: rgb(14, 42, 63);
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.IvanSlogan {
+    font-family: "AbhayaLibre-Regular";
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* background-color: rgba(9, 39, 49, 0.63); */
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.116);
+    /* opacity: 10%; */
+    font-size: 24px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 68px;
+    /* bottom: 50px; */
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 170%;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+}
+
+.text2 {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.116);
+    /* opacity: 10%; */
+    font-size: 24px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 212px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 170%;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+}
+
+.text3 {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.116);
+    /* opacity: 10%; */
+    font-size: 24px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 153px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 170%;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.img {
+    background-color: rgb(255, 255, 255);
+    opacity: 20%;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 18px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.actual {
+    display: none;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 425px) {
+    .actual {
+        display: flex;
+        background-image: url(Christmas.jpg);
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.116);
+        font-size: 18x;
+        padding: 20px 20px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        /* line-height: 170%; */
+        font-family: "AbhayaLibre-Regular";
+        height: fit-content;
+        display: flex;
+    }
+    .slider {
+        display: none;
+    }
+    header nav ul {
+        list-style-type: none;
+        margin-left: calc(-100% - 80px);
+        /* padding-left: 0; */
+        line-height: 180%;
+        letter-spacing: 0.2em;
+        background-color: #b8cfdd;
+        box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+        border-radius: 10%;
+        width: fit-content;
+        padding: 15px 40px;
+        box-sizing: border-box;
+    }
+    header {
+        height: 10vh;
+        /* overflow-x: hidden; */
+        width: 100vw;
+    }
+    .Hamburger {
+        margin-right: 30px;
+    }
+    #logo {
+        max-width: 200px;
+    }
+    .IvanSlogan {
+        width: 100vw;
+        height: fit-content;
+        /* outline: 1px solid black; */
+        /* margin-bottom: 2px; */
+        /* overflow: hidden; */
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /* flex-direction: column-reverse; */
+    }
+    .Ivan {
+        width: 100vw;
+    }
+    .slogan {
+        /* background-color: rgba(63, 109, 155, 0.288); */
+        margin-top: 0;
+        margin-bottom: 1px;
+        width: 90vw;
+        font-size: 25px;
+        line-height: 200%;
+        height: fit-content;
+        padding: 25px 10px;
+        letter-spacing: 0.2em;
+        /* border-bottom: 1px solid rgba(24, 71, 107, 0.486); */
+    }
+    .text {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.116);
+        /* opacity: 10%; */
+        font-size: 10px;
+        padding: 20px 20px;
+        /* position: absolute; */
+        /* top: 68px; */
+        /* bottom: 50px; */
+        /* width: 100%; */
+        text-align: center;
+        letter-spacing: 0.1em;
+        /* line-height: 170%; */
+        font-family: "AbhayaLibre-Regular";
+        height: fit-content;
+        display: flex;
+        /* flex-wrap: wrap-reverse; */
+    }
+    .footer {
+        width: 100vw;
+        height: 10vh;
+    }
+}

@@ -497,6 +497,9 @@ p.blocktext {
 .img {
     background-color: rgb(255, 255, 255);
     opacity: 20%;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 
 
@@ -578,7 +581,7 @@ p.blocktext {
         box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
         border-radius: 10%;
         width: fit-content;
-        padding: 15px 40px;
+        padding: 15px 20px;
         box-sizing: border-box;
     }
     header {

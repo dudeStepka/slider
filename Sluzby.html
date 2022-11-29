@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+    <link rel="stylesheet" href="sluzby.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sluzby.css">
+    <title>Služby</title>
+
+    <script>
+        let clickNumber = 0;
+
+        function showMenu() {
+            clickNumber++;
+            if (clickNumber % 2 != 0)
+                document.querySelector("nav").style.display = "block";
+            else if (clickNumber % 2 == 0) document.querySelector("nav").style.display = 'none';
+
+            console.log(clickNumber);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="MenuClass">
+            <div class="Hamburger" onclick="showMenu();">
+                <div class="Line Line1"></div>
+                <div class="Line Line2"></div>
+                <div class="Line Line3"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="#">O nás</a></li>
+                    <li><a href="Sluzby.html">Služby</a></li>
+                    <li style="line-height: 90%;padding-top: 8px;border-bottom-width: 8px;padding-bottom: 8px;"><a href="table_Vypocet_Trvaly_Pobyt.html" style="
+                        padding-top: 0px;
+                        border-top-width: 0px;">Výpočítej roky <br> (trvalý pobyt)</a></li>
+                    <li><a href="Kontakty.html">Kontakty</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="SelectTable">
+        <div class="Select">
+            <p style="font-size: 60px; letter-spacing: 4px; padding-bottom: 30px; padding-top: 30px; margin: auto; color: rgb(14, 41, 59); text-align: center;">Služby</p>
+            <form class="sluzby">
+                <select name="Sluzba" class='vyber' onchange="selectTable();">
+        <optgroup label="Vyberte">
+        <option selected disabled>-- Vyberte službu --</option>
+        <option value="CP">Cizinecké právo</option>
+        <option value="AP">Autorské právo</option>
+        <option value="NP">Nemovitostní právo</option>
+        <option value="RP">Rodinné právo</option>
+        <option value="DP">Dražební právo</option>
+        <option value="TP">Trestní právo</option>
+        <option value="ALL">Ukazat všechny služby</option>
+        </optgroup>
+        </select>
+            </form>
+        </div>
+        <table id="CizineckePravo">
+            <tr>
+                <td colspan="2" class=sluzbyPravo>Cizinecké právo</td>
+            </tr>
+            <tr>
+
+                <td colspan="2" style="text-align: center; font-size: 25px; letter-spacing: 4px; padding-bottom: 30px; color: rgb(14, 41, 59);">Poskytované služby</td>
+            </tr>
+            <tr>
+
+                <td class=Category>Dlouho- nebo kratkodobý pobyt</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="nazevSluzby">Pomoc při vyplňování žádosti o pobyt</td>
+                <td style="text-align: left;">3.000,- Kč / úkon</td>
+            </tr>
+
+
+            <tr>
+
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">4.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+
+                <td class="nazevSluzby">Připrava a podání odvolání na zamitnutí vydání povolení</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+            <tr>
+                <td class=Category>Trvalý pobyt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Pomoc při vyplňování žádosti o trvalý pobyt</td>
+                <td style="text-align: left;">10.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">4.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Připrava a podání odvolání na zamitnutí vydání povolení</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+
+            <tr>
+                <td class=Category>Občanství</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Úvodní konzultace</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Komplexní pomoc přípravy podkladů pro občanství</td>
+                <td style="text-align: left;">30.000,- Kč / úkon</td>
+            </tr>
+
+            <tr>
+
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+        </table>
+
+        <table id="AutorskePravo">
+            <tr>
+                <td colspan="2" class=sluzbyPravo> Autorské právo</td>
+            </tr>
+            <tr>
+
+                <td colspan="2" style="text-align: center; font-size: 25px; letter-spacing: 4px; padding-bottom: 30px; color: rgb(14, 41, 59);">Poskytované služby</td>
+            </tr>
+            <tr>
+
+                <td class=Category>Dlouho- nebo kratkodobý pobyt</td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="nazevSluzby">Pomoc při vyplňování žádosti o pobyt</td>
+                <td style="text-align: left;">3.000,- Kč / úkon</td>
+            </tr>
+
+
+            <tr>
+
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">4.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+
+                <td class="nazevSluzby">Připrava a podání odvolání na zamitnutí vydání povolení</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+            <tr>
+                <td class=Category>Trvalý pobyt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Pomoc při vyplňování žádosti o trvalý pobyt</td>
+                <td style="text-align: left;">10.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">4.000,- Kč / úkon</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Připrava a podání odvolání na zamitnutí vydání povolení</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+
+            <tr>
+                <td class=Category>Občanství</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Úvodní konzultace</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+            <tr>
+                <td class="nazevSluzby">Komplexní pomoc přípravy podkladů pro občanství</td>
+                <td style="text-align: left;">30.000,- Kč / úkon</td>
+            </tr>
+
+            <tr>
+
+                <td class="nazevSluzby">Doprovod na OAMP (Cizinecká policie)</td>
+                <td style="text-align: left;">2.500,- Kč / hodina</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div style="height: 80vh;"></div>
+    <div class="footer">
+        <p class="blocktext">
+            © GLOGER Advokátní kancelář
+        </p>
+    </div>
+
+    <script src="sluzby.js"></script>
+</body>
+
+</html>

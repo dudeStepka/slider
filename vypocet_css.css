@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "AbhayaLibre-Regular";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Bold";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Light";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Light.ttf);
+}
+
+.VT {
+    margin: 10px 10px 10px 10px
+}
+
+.Hamburger {
+    width: 30px;
+    height: 24px;
+    /* background-color: rgba(0, 98, 130, 0.048); */
+    position: relative;
+    margin-right: 120px;
+    /* border: black 1px solid; */
+    z-index: 5;
+}
+
+.Line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(25, 72, 106);
+    /* box-shadow: 0 0 0.5px 1px rgb(25, 72, 106); */
+    border-radius: 5%/25%;
+}
+
+.Line1 {
+    top: 0px;
+}
+
+.Line2 {
+    top: 10px;
+}
+
+.Line3 {
+    bottom: 0px;
+}
+
+header {
+    display: flex;
+    /* на одной строке */
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "AbhayaLibre-Light";
+    letter-spacing: 1px; */
+    /* background-color: rgba(25, 72, 106, 0.096); */
+    /* Параметры линии */
+    /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
+    height: 10vh;
+}
+
+header a {
+    /* снятие подчёркивания */
+    color: rgb(25, 72, 106);
+    margin-left: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    /*header - selector элемента, a - selector, hover - наведение мыши. :hover - selector псевдокласса */
+    color: rgb(0, 98, 130);
+}
+
+header nav {
+    /* margin-right: 5%; */
+    /* min-width: 60%;
+     */
+    /* ширина меняется здесь*/
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: calc(-100% - 80px);
+    /* padding-left: 0; */
+    line-height: 180%;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 98, 130, 0.048);
+    box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+    border-radius: 10%;
+    width: fit-content;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+header nav ul li:hover a {
+    /* width: 100%; */
+    width: 100%;
+    display: inline-block;
+    transform: scale(1.2) translateX(20px);
+}
+
+.MenuClass {
+    position: relative;
+    /* border: orangered 2px solid; */
+}
+
+body {
+    font-family: "AbhayaLibre-Regular";
+    margin: auto;
+    /* font-size: 18px; */
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 98, 130, 0.048);
+}
+
+.form {
+    font-family: "AbhayaLibre-Regular";
+    margin: 0 auto;
+}
+
+.HEAD {
+    font-family: "AbhayaLibre-Regular";
+    font-size: 30px;
+    line-height: 150%;
+    padding: 30px 25px;
+    color: rgb(14, 41, 59);
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sekce {
+    width: 33vw;
+    text-align: center;
+    font-size: 19px;
+    vertical-align: top;
+}
+
+.four {
+    margin-left: 33vw;
+    margin-right: 33vw;
+    text-align: left;
+    width: 33vw;
+    font-size: 19px;
+    letter-spacing: 0.2em;
+    line-height: 150%;
+}
+
+.elipse {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(84, 129, 171, 0.4);
+    box-shadow: 0 0 10px 5px rgba(54, 83, 110, 0.4);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    font-family: "AbhayaLibre-Regular";
+    font-size: 20px;
+    border: none;
+    margin: 30px auto;
+    /* top: 0; */
+}
+
+.elipse span {
+    /* selector for span inside elipse*/
+    margin: auto;
+}
+
+.elipse4 {
+    width: 600px;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 20px;
+    /* box-shadow: 0 0 5px 2px rgba(54, 83, 110, 0.4); */
+}
+
+.date {
+    border: none;
+    font-family: "AbhayaLibre-Regular";
+    font-size: 16px;
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+    /* margin: 10px 10px 10px 10px; */
+    text-align: center;
+    line-height: 150%;
+    margin: 5px;
+}
+
+.date:hover {
+    border: none;
+}
+
+.reset:hover {
+    transform: scale(1.2);
+}
+
+.reset {
+    border: medium none;
+    background-image: none;
+    background: transparent;
+    text-align: center;
+    background-color: transparent;
+    font-family: "AbhayaLibre-Regular";
+    color: rgba(102, 0, 0, 0.589);
+    font-size: 18px;
+}
+
+.add:hover {
+    transform: scale(1.1);
+}
+
+.add {
+    border: none;
+    background-image: none;
+    background: transparent;
+    text-align: center;
+    background-color: transparent;
+    font-family: "AbhayaLibre-Regular";
+    color: rgb(74, 134, 178);
+    font-size: 18px;
+    padding-bottom: 50px;
+    line-height: 150%;
+}
+
+.footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    letter-spacing: 2px;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+    padding: 15px;
+    background-color: rgba(25, 72, 106, 0.362);
+    box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.362);
+    color: rgb(25, 72, 106);
+    font-size: 16px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: 10em; */
+    align-items: center
+}
+
+.vysledek {
+    max-width: 200px;
+    /* background-color: rgba(0, 98, 130, 0);
+    background-color: rgba(0, 98, 130, 0); */
+}
+
+.curRes {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 98, 130, 0);
+    /* color: rgba(0, 98, 130, 0.048); */
+}
+
+.cisla {
+    width: 100px;
+    background-color: rgba(0, 98, 130, 0);
+}
+
+.celkova {
+    padding: 15px 0px;
+    max-width: 200px;
+    background-color: rgba(0, 98, 130, 0);
+}
+
+.bold {
+    height: 100px;
+    font-family: "AbhayaLibre-Bold";
+    background-color: rgba(0, 98, 130, 0);
+}
+
+.one {
+    text-align: left;
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .sekce {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+    .one {
+        /* padding-left: 15px; */
+        width: fit-content;
+        margin: auto;
+    }
+    body {
+        width: 100vw;
+        /* outline: 1px solid black; */
+        margin: 0;
+        /* overflow: hidden; */
+    }
+    .four {
+        /* margin-left: 33vw; */
+        /* margin-right: 33vw; */
+        text-align: left;
+        width: fit-content;
+        margin: auto;
+        font-size: 19px;
+        letter-spacing: 0.2em;
+        line-height: 150%;
+        /* margin-bottom: 50px; */
+        /* outline: 1px solid black; */
+        /* padding: 0px 30px; */
+    }
+    .footer {
+        width: 100vw;
+        height: 10vh;
+    }
+    header nav ul {
+        list-style-type: none;
+        margin-left: calc(-100% - 80px);
+        /* padding-left: 0; */
+        line-height: 180%;
+        letter-spacing: 0.2em;
+        background-color: #b8cfdd;
+        box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+        border-radius: 10%;
+        width: fit-content;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+    header {
+        height: 10vh;
+        /* overflow-x: hidden; */
+        width: 100vw;
+    }
+    .Hamburger {
+        margin-right: 30px;
+    }
+    #logo {
+        max-width: 200px;
+    }
+}

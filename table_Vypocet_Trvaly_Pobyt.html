@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výpočet</title>
+    <link rel="stylesheet" href="vypocet_css.css">
+
+
+    <script>
+        let clickNumber = 0;
+
+        function showMenu() {
+            clickNumber++;
+            if (clickNumber % 2 != 0)
+                document.querySelector("nav").style.display = "block";
+            else if (clickNumber % 2 == 0) document.querySelector("nav").style.display = 'none';
+            console.log(clickNumber);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <div class="MenuClass">
+            <div class="Hamburger" onclick="showMenu();">
+                <div class="Line Line1"></div>
+                <div class="Line Line2"></div>
+                <div class="Line Line3"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="#">O nás</a></li>
+                    <li><a href="Sluzby.html">Služby</a></li>
+                    <li style="line-height: 90%;padding-top: 8px;border-bottom-width: 8px;padding-bottom: 8px;"><a href="table_Vypocet_Trvaly_Pobyt.html" style="
+                        padding-top: 0px;
+                        border-top-width: 0px;">Výpočítej roky <br> (trvalý pobyt)</a></li>
+                    <li><a href="Kontakty.html">Kontakty</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form>
+        <p class="HEAD">Vypočet doby pobytu na území <br> České republiky</p>
+        <div class="wrapper">
+            <div class="sekce">
+                <div>
+                    <div class="elipse"><span>1</span></div>
+                </div>
+                <div class="one">
+                    <input type="radio" name="VisaType" id="zk" class="VT">&nbsp;&nbsp;Zaměstnanecká karta<br>
+                    <input type="radio" name="VisaType" id="sv" class="VT">&nbsp;&nbsp;Studentské vizum<br>
+                    <input type="radio" name="VisaType" id="sp" class="VT">&nbsp;&nbsp;Spojení<br>
+                    <input type="radio" name="VisaType" id="st" class="VT">&nbsp;&nbsp;Strpení<br>
+                    <input type="radio" name="VisaType" id="os" class="VT">&nbsp;&nbsp;Ostatní
+                </div>
+            </div>
+            <!-- <div style="display: inline-block;"> -->
+            <div class="sekce">
+                <div>
+                    <div class="elipse"><span>2</span></div>
+                </div>
+                <div>
+                    Od kdy &nbsp;<input type="date" name="date1" class="date">
+                </div>
+                <div>Do kdy &nbsp;<input type="date" name="date2" class="date">
+                </div>
+            </div>
+
+            <div class="sekce">
+                <div>
+                    <div class="elipse"><span>3</span></div>
+                </div>
+                <div onclick="AddNewForm();" class="add">Přidat další vizum /<br>Spočitat</div>
+                <div>
+                    <input type="button" onclick="clearAll();" value="RESET" class=reset>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div>
+            <div>
+                <div class="elipse"><span>4</span></div>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class="four">
+            Zaměstnanecká karta: <input type="text" name="ZK" size="4" class=curRes readonly><br> Studentské vizum: <input type="text" name="SV" size="4" class=curRes readonly><br> Spojení: <input type="text" name="SP" size="4" class=curRes readonly><br>Strpení:
+            <input type="text" name="ST" size="4" class=curRes readonly><br> Ostatní: <input type="text" name="OS" size="4" class=curRes readonly><br> Délka pobytu číní: <input type="text" name="Result" size="6" readonly style="border: none; background-color: rgba(0, 98, 130, 0);">&nbsp;let
+        </div>
+    </form>
+
+
+
+    <!-- <form>
+
+        <table>
+            <caption class="HEAD">Vypočet doby pobytu na území <br> České republiky</caption> -->
+    <!-- <tr style="text-align: center;">
+        <td><input type="text" class=elipse value="1"></td>
+        <td><input type="text" class=elipse value="2"></td>
+        <td><input type="text" class=elipse value="3"></td>
+    </tr>
+
+    <tr>
+        <td><input type="radio" name="VisaType" id="" class="VT">&nbsp;&nbsp;Zaměstnanecká karta</td>
+        <td style="text-align: center;">Od kdy &nbsp;<input type="date" name="date1" class="date"></td>
+        <td style="text-align: center;" rowspan="2">
+            <div onclick="AddNewForm();" class="add">Přidat další vizum /<br>Spočitat</div>
+        </td> -->
+    <!-- </tr>
+
+            <tr>
+                <td><input type="radio" name="VisaType" id="" class="VT">&nbsp;&nbsp;Studentské vizum</td>
+                <td style="text-align: center;">Do kdy &nbsp;<input type="date" name="date2" class="date"></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="VisaType" id="" class="VT">&nbsp;&nbsp;Spojení</td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="VisaType" id="" class="VT">&nbsp;&nbsp;Strpení</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="VisaType" id="" class="VT">&nbsp;&nbsp;Ostatní</td>
+                <td></td>
+                <td style="text-align: center;"><input type="button" onclick="clearAll();" value="RESET" class=reset></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="3" class=elipse4><input type="text" class=elipse value="4"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>Zaměstnanecká karta:</td>
+                <td><input type="text" name="ZK" size="4" class=curRes readonly></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Studentské vizum: </td>
+                <td><input type="text" name="SV" size="4" class=curRes readonly></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    Spojení:
+                </td>
+                <td>
+                    <input type="text" name="SP" size="4" class=curRes readonly><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    Strpení:
+                </td>
+                <td><input type="text" name="ST" size="4" class=curRes readonly><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    Ostatní:
+                </td>
+                <td>
+                    <input type="text" name="OS" size="4" class=curRes readonly><br>
+                </td>
+            </tr>
+
+            <tr class=bold>
+                <td></td>
+                <td>Délka pobytu číní </td>
+                <td>
+                    <input type="text" name="Result" size="6" readonly style="border: none; background-color: rgba(0, 98, 130, 0);">&nbsp;let</td>
+            </tr>
+        </table>
+    </form> -->
+
+    <script src="table_Visa_Days.js"></script>
+    <div class="footer ">
+        <p class="blocktext ">
+            © GLOGER Advokátní kancelář
+        </p>
+    </div>
+
+</body>
+
+
+
+</html>

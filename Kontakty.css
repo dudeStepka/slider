@@ -277,7 +277,6 @@ p.blocktext {
 
 .cak:visited {
     color: rgb(25, 72, 106);
-    */
 }
 
 .cak:focus {
@@ -297,7 +296,7 @@ p.blocktext {
     opacity: 75%;
     height: 10vh;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .img {
@@ -319,20 +318,40 @@ p.blocktext {
 }
 
 @media (max-width: 425px) {
+    .map {
+        border-radius: 25px;
+        opacity: 70%;
+        margin-top: 20px;
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+    iframe {
+        max-width: 90vw;
+    }
+    header nav ul {
+        list-style-type: none;
+        margin-left: calc(-100% - 80px);
+        /* padding-left: 0; */
+        line-height: 180%;
+        letter-spacing: 0.2em;
+        background-color: #b8cfdd;
+        box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+        border-radius: 10%;
+        width: fit-content;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
     header {
-        justify-content: space-between;
-        /* на одной строке */
-        /* font-family: "AbhayaLibre-Light";
-    letter-spacing: 1px; */
-        /* background-color: rgba(25, 72, 106, 0.096); */
-        /* Параметры линии */
-        /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
         height: 10vh;
+        /* overflow-x: hidden; */
         width: 100vw;
     }
-    .logo {
-        width: 50vw;
-        scale: 0.6;
+    .Hamburger {
+        margin-right: 30px;
+    }
+    #logo {
+        max-width: 200px;
     }
     body {
         width: 100vw;
@@ -347,13 +366,26 @@ p.blocktext {
     }
     .img {
         scale: 0.6;
-        margin: 30px 10px;
+        /* margin: 30px 10px; */
+        margin: 10px 0px;
     }
     .icons {
         justify-content: space-between;
+        /* margin-bottom: 10px; */
+        /* margin-top: 10px; */
     }
-    .Kontakty {
-        font-size: 20px;
+    p.Kontakty {
+        font-size: 15px;
+        /* text-align: left; */
+        margin: 10px auto;
+        /* outline: 1px solid black; */
+        padding: 10px;
+        /* border: 20px groove cadetblue; */
+        line-height: 200%;
+        /*    padding-top: 50px;
+        */
+        text-align: center;
+        height: fit-content;
     }
     p.blocktext {
         margin-left: auto;
@@ -363,5 +395,27 @@ p.blocktext {
         align-items: center;
         font-size: 12px;
         padding-top: 10px;
+    }
+    .text {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.116);
+        /* opacity: 10%; */
+        font-size: 10px;
+        padding: 20px 20px;
+        /* position: absolute; */
+        /* top: 68px; */
+        /* bottom: 50px; */
+        /* width: 100%; */
+        text-align: center;
+        letter-spacing: 0.1em;
+        /* line-height: 170%; */
+        font-family: "AbhayaLibre-Regular";
+        height: fit-content;
+        display: flex;
+        /* flex-wrap: wrap-reverse; */
+    }
+    .footer {
+        width: 100vw;
+        height: 10vh;
     }
 }

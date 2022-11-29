@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "AbhayaLibre-Regular";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Bold";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "AbhayaLibre-Light";
+    src: url(text\ style/abhaya-libre/AbhayaLibre-Light.ttf);
+}
+
+.Hamburger {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    margin-right: 120px;
+    z-index: 5;
+}
+
+.Line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(25, 72, 106);
+    border-radius: 5%/25%;
+}
+
+.Line1 {
+    top: 0px;
+}
+
+.Line2 {
+    top: 10px;
+}
+
+.Line3 {
+    bottom: 0px;
+}
+
+header {
+    display: flex;
+    /* на одной строке */
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: "AbhayaLibre-Light";
+    letter-spacing: 1px; */
+    /* background-color: rgba(25, 72, 106, 0.096); */
+    /* Параметры линии */
+    /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
+    height: 10vh;
+}
+
+header a {
+    /* снятие подчёркивания */
+    color: rgb(25, 72, 106);
+    margin-left: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+header a:hover {
+    /*header - selector элемента, a - selector, hover - наведение мыши. :hover - selector псевдокласса */
+    color: rgb(0, 98, 130);
+}
+
+header nav {
+    /* margin-right: 5%; */
+    /* min-width: 60%;
+     */
+    /* ширина меняется здесь*/
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: calc(-100% - 80px);
+    /* padding-left: 0; */
+    line-height: 180%;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 98, 130, 0.048);
+    box-shadow: 0 0 1px 1px (0, 98, 130, 0.048);
+    border-radius: 10%;
+    width: fit-content;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+header nav ul li:hover a {
+    /* width: 100%; */
+    width: 100%;
+    display: inline-block;
+    transform: scale(1.2) translateX(20px);
+}
+
+.MenuClass {
+    position: relative;
+    /* border: orangered 2px solid; */
+}
+
+body {
+    font-family: "AbhayaLibre-Regular";
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 98, 130, 0.048);
+}
+
+form input {
+    font-family: "Montserrat-Light";
+    line-height: 200%;
+    font-size: 16px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 12px;
+}
+
+.TableDate input {
+    width: 160px;
+    box-sizing: border-box;
+    background-color: rgb(240, 245, 247);
+    /* border: 2px  rgb(0, 28, 37); */
+    text-align: center;
+    color: rgb(0, 24, 32);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 45px;
+    line-height: 140%;
+    border: 2px ridge rgb(0, 49, 65);
+    font-family: "Montserrat-Medium";
+    cursor: pointer;
+    /* width: fit-content; */
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    /* width: 300px; */
+    height: 80px;
+}
+
+[type="button"] {
+    padding: 5px;
+}
+
+input:focus {
+    outline-color: rgb(0, 98, 130);
+}
+
+form {
+    text-align: left;
+    margin: auto;
+    line-height: 160%;
+}
+
+.Container {
+    height: 100vh;
+    /* View Height - видимая часть окна браузера */
+    display: flex;
+    flex-direction: column;
+    /* font-family: "Montserrat-Light"; */
+}
+
+p.Kontakty {
+    /* font-family: "Montserrat-Light"; */
+    font-size: 20px;
+    /* text-align: left; */
+    margin: 10px auto;
+    /* outline: 1px solid black; */
+    padding: 10px;
+    /* border: 20px groove cadetblue; */
+    line-height: 200%;
+    /*    padding-top: 50px;
+*/
+    text-align: center;
+    height: 58vh;
+}
+
+.map {
+    border-radius: 25px;
+    opacity: 70%;
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: none;
+}
+
+.Action {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    /* padding: 50px; */
+    line-height: 160%;
+}
+
+.FrameOff input {
+    border: none;
+    color: rgb(1, 84, 112);
+}
+
+.FrameOff input:focus {
+    outline: none;
+}
+
+form {
+    display: block;
+}
+
+.TableDate td {
+    padding: 5px 10px;
+}
+
+.VisaTable input {
+    width: 70px;
+}
+
+.footer {
+    letter-spacing: 2px;
+    font-family: "AbhayaLibre-Regular";
+    height: fit-content;
+    padding: 15px;
+    background-color: rgba(25, 72, 106, 0.362);
+    box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.362);
+    color: rgb(25, 72, 106);
+    font-size: 16px;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: 10em; */
+    align-items: center
+}
+
+.button {
+    background-color: rgb(233, 246, 250);
+    text-align: center;
+    color: rgb(0, 24, 32);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 18px;
+    line-height: 140%;
+    border: 2px solid rgb(0, 49, 65);
+    font-family: "Montserrat-Medium";
+    cursor: pointer;
+    /* width: fit-content; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    height: 80px;
+}
+
+.button>p {
+    /*Комбинированный элемент, > выбирает первых потомков*/
+    margin: auto;
+}
+
+.cak:link {
+    color: rgb(25, 72, 106);
+}
+
+.cak:visited {
+    color: rgb(25, 72, 106);
+    */
+}
+
+.cak:focus {
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+}
+
+.cak:hover {
+    background-color: rgba(84, 129, 171, 0.158);
+    box-shadow: 0 0 2px 2px rgba(84, 129, 171, 0.158);
+    color: rgb(25, 72, 106);
+}
+
+.icons {
+    width: fit-content;
+    opacity: 75%;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.img {
+    margin: 10px 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.img:hover {
+    transform: scale(1.2);
+    border-radius: 25%;
+    background: #1596657e;
+    box-shadow: 0px 0px 10px 10px rgba(30, 109, 146, 0.4);
+    display: inline-block;
+}
+
+.wrapper {
+    display: flex;
+}
+
+@media (max-width: 425px) {
+    header {
+        justify-content: space-between;
+        /* на одной строке */
+        /* font-family: "AbhayaLibre-Light";
+    letter-spacing: 1px; */
+        /* background-color: rgba(25, 72, 106, 0.096); */
+        /* Параметры линии */
+        /* box-shadow: 0 0 1px 1px rgba(25, 72, 106, 0.096); */
+        height: 10vh;
+        width: 100vw;
+    }
+    .logo {
+        width: 50vw;
+        scale: 0.6;
+    }
+    body {
+        width: 100vw;
+        height: 80vh;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .MenuClass {
+        width: 20vw;
+        overflow-inline: hidden;
+    }
+    .img {
+        scale: 0.6;
+        margin: 30px 10px;
+    }
+    .icons {
+        justify-content: space-between;
+    }
+    .Kontakty {
+        font-size: 20px;
+    }
+    p.blocktext {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        /* height: 10em; */
+        align-items: center;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}

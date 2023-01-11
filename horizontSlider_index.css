@@ -1,0 +1,30 @@
+.HorSlider {
+    display: flex;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.Slide .Img {
+    width: 158px;
+    height: 158px;
+    background-size: cover;
+}
+
+.Slide {
+    text-decoration: none;
+    text-align: center;
+    width: 158px;
+    height: 250px;
+    outline: 1px black solid;
+    display: block;
+    color: rgb(19, 54, 80);
+}
+
+.Button {
+    background-color: rgba(25, 72, 106, 0.362);
+    color: rgb(25, 72, 106);
+    width: 148px;
+    margin: auto;
+}
+
+.Text {}
